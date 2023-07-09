@@ -7,5 +7,5 @@
                     class="badge badge-success">9</span></a>
         </div>
     </nav>
-    <todo class="col-6 mb-3"></todo>
+    <todo *ngFor="let todo of todos; let i = index" [todoItem]="todo.text" class="col-6 mb-3"></todo>
 </div>

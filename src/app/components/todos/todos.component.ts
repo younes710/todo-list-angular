@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ITodo } from '../../app.component';
+
 
 @Component({
   selector: 'todos-list',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./todos.component.css']
 })
 export class TodosComponent {
-
+  @Input() todos!: ITodo[];
 }

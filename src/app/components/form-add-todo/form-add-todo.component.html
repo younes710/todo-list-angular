@@ -1,6 +1,7 @@
-<div class="form-inline">
+<form class="form-inline" (submit)="onSubmit()">
     <div class="input-group">
-        <input type="text" class="form-control mx-sm-3" placeholder="i want to do ..." />
-        <button class="btn btn-primary">add</button>
+        <input [(ngModel)]="textTodo" name="todoInput" type="text" class="form-control mx-sm-3"
+            placeholder="i want to do ..." />
+        <button type="submit" class="btn btn-primary">add</button>
     </div>
-</div>
+</form>

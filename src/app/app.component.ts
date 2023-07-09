@@ -21,4 +21,8 @@ export class AppComponent {
     ]
     console.log(this.todos);
   }
+
+  deleteTodo(key: number) {
+    this.todos = this.todos.filter(todo => todo.key !== key);
+  }
 }

@@ -9,7 +9,7 @@
     </section>
     <div class="todosList">
         <div class="container">
-            <todos-list [todos]="todos"></todos-list>
+            <todos-list [todos]="todos" (delete)="deleteTodo($event)"></todos-list>
         </div>
     </div>
 </main>
